@@ -1,0 +1,168 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .homePage {
+        flex-direction: column;
+    }
+
+    #map {
+        z-index: 0;
+        height: 40%;
+        width: 80%;
+        border-radius: 10px;
+        margin-top: -72%;
+        margin-left: 0;
+    }
+    .mapboxgl-canvas-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        box-shadow: inset 0 0 1px #707070, 0 0 1px #707070;
+        height: 34%;
+        width: 80%;
+        margin-top: 30%;
+        margin-left: 0;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgb(248, 248, 248, 0.9);
+    }
+
+    .info ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info ul li {
+        color: white;
+        list-style-type: none;
+        font-size: 0.8rem;
+    }
+
+    .githubColor {
+        color: #171a1c;
+    }
+    .linkedinColor {
+        color: #0077B5;
+    }
+    .tphColor {
+        color: #5A5D7B;
+    }
+    .mailColor {
+        color: #08BDE1;
+    }
+    .adressColor {
+        color: #19203E;
+    }
+    .info ul li i {
+        font-size: 26px;
+    }
+    .info ul li a {
+        margin-left: 4px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        font-family: Helvetica Neue, Arial, sans-serif;
+        text-decoration: none;
+    }
+    .info ul li a:hover {
+        opacity: 0.8;
+        color: rgb(211, 87, 87);
+    }
+
+    .button {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #map {
+        z-index: 0;
+        height: 80%;
+        width: 40%;
+        border-radius: 10px;
+        /* margin-left: -246px; */
+        left: -30%;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        box-shadow: inset 0 0 1px #707070, 0 0 1px #707070;
+        right: 3%;
+        height: 50%;
+        width: 50%;
+        padding: 10px;
+        border-radius: 10px;
+        background: rgb(248, 248, 248, 0.9);
+    }
+
+    .info ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info ul li {
+        color: white;
+        list-style-type: none;
+        font-size: 0.6rem;
+    }
+
+    .githubColor {
+        color: #171a1c;
+    }
+    .linkedinColor {
+        color: #0077B5;
+    }
+    .tphColor {
+        color: #5A5D7B;
+    }
+    .mailColor {
+        color: #08BDE1;
+    }
+    .adressColor {
+        color: #19203E;
+    }
+    .info ul li i {
+        font-size: 26px;
+    }
+    .info ul li a {
+        margin-left: 4px;
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: Helvetica Neue, Arial, sans-serif;
+        text-decoration: none;
+    }
+    .info ul li a:hover {
+        opacity: 0.8;
+        color: rgb(211, 87, 87);
+    }
+
+    .button {
+        display: none;
+    } 
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jérémy Peyrat/Contact</title>
+    <link rel="icon" type="image/png" href="../img/monLogo.png" sizes="16x16" />
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/contact.css">
+    <link rel="stylesheet" type="text/css" href="../styles/contact-mobile.css">
+    <link rel="stylesheet" type="text/css" href="../styles/contact-tablet.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home-mobile.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home-tablet.css">
+    <link rel="stylesheet" type="text/css" href="../styles/mentions.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar">
+            <img id="hamburger" src="../img/finalBurger.png" alt="Ouvrir le Menu">
+            <button id="open-btn" onclick="openNav()"></button>
+    
+            <img id="homeLogo" src="../img/monLogo.png" alt="Logo">
+            
+            <nav class="sidebar">
+            <img id="crossBtn" src="../img/crossBtn.png" alt="Fermer le Menu">
+            <button id="close-btn" onclick="closeNav()"></button>
+            <img id="sidebarSignature" src="../img/signature.png" alt="Signature">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about/about.html">À Propos</a></li>
+                <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="#">Me Joindre</a></li>
+            </ul>
+            <img id="sidebarLogo" src="../img/monLogo.png" alt="Logo">
+            </nav>
+        </nav>
+
+        <section class="topTitle">
+            <hr class="leftLine">
+            <h1 id="pageTitle">Me Joindre</h1>
+            <hr class="rightLine">
+        </section>
+
+        <section class="homePage">
+            <div id='map' 
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine"></div>
+            <div class="info" 
+            data-aos="flip-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-duration="1000">
+                <ul>
+                    <li><i class="fa fa-github-alt githubColor"></i><a class="githubColor" href="https://github.com/Jerem33320/">https://github.com/Jerem33320</a></li>
+                    <li><i class="fa fa-linkedin linkedinColor"></i><a class="linkedinColor" href="https://www.linkedin.com/in/jérémy-peyrat/">https://www.linkedin.com/in/jérémy-peyrat/</a></li>
+                    <li><i class="fa fa-mobile tphColor"></i><a class="tphColor" href="tel:+33613704329">06.13.70.43.29</a></li>
+                    <li><i class="fa fa-envelope mailColor"></i><a class="mailColor" href="mailto:jeremy.peyrat33320@gmail.com">jeremy.peyrat33320@gmail.com</a></li>
+                    <li><i class="fa fa-map-marker adressColor"></i><a class="adressColor" href="#">19 chemin de milavy, 33320 le Taillan-Médoc</a></li>
+                </ul>
+            </div>
+
+            <button onclick="location.href='mailto:jeremy.peyrat33320@gmail.com'" class="button">
+                <div class="compass">
+                    <div class="msg">Par ici!</div>
+                </div>
+            </button>
+            
+        </section>
+
+        <footer class="footer">
+            <img class="triangleRight rectify-top-triangle" src="../img/imgContact/triangleRightContact.png" alt="Deco droite triangle">
+            <img class="footerLeft" src="../img/imgContact/footLeftContact.png" alt="Logo bas de page gauche">
+            <h3>©2019 Jérémy Peyrat | <a href="../mentions.html">Mentions Légales</a> | Fullstack Web Developer</h3>
+        </footer>
+
+    </div>
+            
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <script src="../js/map.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../js/buttonContact.js"></script>
+</body>
+</html>

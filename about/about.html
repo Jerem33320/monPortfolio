@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jérémy Peyrat/À Propos</title>
+    <link rel="icon" type="image/png" href="../img/monLogo.png" sizes="16x16" />
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about-mobile.css">
+    <link rel="stylesheet" type="text/css" href="../styles/about-tablet.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home-mobile.css">
+    <link rel="stylesheet" type="text/css" href="../styles/home-tablet.css">
+    <link rel="stylesheet" type="text/css" href="../styles/mentions.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <img id="hamburger" src="../img/finalBurger.png" alt="Ouvrir le Menu">
+            <button id="open-btn" onclick="openNav()"></button>
+    
+            <img id="homeLogo" src="../img/monLogo.png" alt="Logo">
+            
+            <nav class="sidebar">
+            <img id="crossBtn" src="../img/crossBtn.png" alt="Fermer le Menu">
+            <button id="close-btn" onclick="closeNav()"></button>
+            <img id="sidebarSignature" src="../img/signature.png" alt="Signature">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">À Propos</a></li>
+                <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+                <li><a href="../contact/contact.html">Me Joindre</a></li>
+            </ul>
+            <img id="sidebarLogo" src="../img/monLogo.png" alt="Logo">
+            </nav>
+        </nav>
+
+        <section class="topTitle">
+            <hr class="leftLine">
+            <h1 id="pageTitle">À Propos</h1>
+            <hr class="rightLine">
+        </section>
+
+        <section class="homePage">
+            <div class="about-container">
+                <div class="aboutLeft" 
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-sine">
+                    <p class="aboutText">
+                        De mon intérêt pour l’univers digital, 
+                        est née ma volonté de m’orienter vers le métier de développeur web
+                        pour mettre au service de ma future entreprise ma créativité,
+                        mon énergie et mes compétences.
+                    </p>
+                    <p class="aboutText">
+                        J’ai suivi deux formations intensives dans le développement web:
+                        <ul>
+                            <li>- le Bootcamp Le Wagon (Bordeaux),</li>
+                            <li>- l’Infrep (Bordeaux).</li>
+                        </ul>
+                    </p>
+                    <p class="aboutText">    
+                        Aimant partager mes connaissances, motivé et toujours
+                        de bonne humeur, je m’applique à ce que mon espace de travail
+                        et mes relations avec mes collègues soient 
+                        agréables et professionnelles.
+                    </p>
+                    <div class="logo-container">
+                        <a href="https://www.lewagon.com">
+                            <div class="ringLeft"></div>
+                            <img id="wagon" src="../img/imgAbout/wagon.png" alt="Formation le Wagon">
+                        </a>
+                        
+                        <a href="https://www.infrep.org">
+                            <div class="ringRight"></div>
+                            <img id="infrep" src="../img/imgAbout/infrep.jpg" alt="Formation Infrep">
+                        </a>
+                    </div>
+                </div>
+                <button class="sentences" onclick="getRandomSentence()">En savoir plus &#x2190;</button>
+                <div class="aboutRight" 
+                data-aos="fade-left"
+                data-aos-anchor="#example-anchor"
+                data-aos-duration="1000">
+                    <div id="passion"
+                    data-aos="fade-up"
+                    data-aos-duration="3000">
+                        <img class="rotating" id="aboutLogo" src="../img/monLogo.png" alt="Logo button">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <img class="triangleRight rectify-top-triangle" src="../img/imgAbout/footRightAbout.png" alt="Logo bas de page droite">  
+            <img class="footerLeft" src="../img/imgAbout/footLeftAbout.png" alt="Logo bas de page gauche">
+            <h3>©2019 Jérémy Peyrat | <a href="../mentions.html">Mentions Légales</a> | Fullstack Web Developer</h3>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="../index.js"></script>
+    <script type="text/javascript" src="../js/randomSentence.js"></script>
+</body>
+</html>

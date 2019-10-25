@@ -1,0 +1,323 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: ghostwhite;
+    }
+
+    .navbar {
+        position: relative;
+        height: 10%;
+        width: 100%;
+    }
+    
+    #homeLogo {
+        position: absolute;
+        height: 44px;
+        top: 10px;
+        left:calc(50% - 22px);
+    }
+    
+    #hamburger {
+        position: absolute;
+        color: white;
+        top: 20px;
+        left: 20px;
+        height: 20px;
+    }
+    
+    #crossBtn {
+        position: absolute;
+        height: 36px;
+        color: white;
+        top: 10px;
+        left: 10px;
+    }
+    
+    #open-btn {
+        position: absolute;
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        left: 10px;
+    }
+
+    #close-btn {
+        position: absolute;
+        opacity: 0;
+        height: 40px;
+        width: 40px;
+        top: 8px;
+        left: 8px;
+    }
+    
+    .sidebar {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 100vh;
+        background: #19203E;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .sidebar ul {
+        position: absolute;
+        height: 400px;
+        width: 160px;
+        top: calc(50% - 160px);
+        left: calc(50% - 80px);
+    }
+    .sidebar ul li {
+        font-family: 'noteworthy';
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        line-height: 60px;
+        list-style-type: none;
+    }
+    
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .sidebar ul li a:hover {
+        color: #B5FBCD;
+    }
+    #sidebarSignature {
+        position: absolute;
+        height: 40px;
+        width: 80px;
+        right: 0px;
+        top: 10px;
+    }
+    #sidebarLogo {
+        position: absolute;
+        height: 140px;
+        width: 140px;
+        right: calc(50% - 70px);
+        bottom: 0px;
+    }
+
+    .home {
+        position: relative;
+        height: 80%;
+        width: 100%;
+    }
+    
+    .triangleRight {
+        display: none;
+    }
+    
+    #homeProfilPic {
+        position: absolute;
+        z-index: 2;
+        top: 32%;
+        left: calc(50% - 35%);
+        height: 52%;
+    }
+    
+    #homeTitle {
+        position: absolute;
+        z-index: 2;
+        top: 3%;
+        right: calc(50% - 30%);
+        height: 23%;
+    }
+    
+    .footer {
+        position: relative;
+        height: 10%;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .footerLeft {
+        position: absolute;
+        top: -174px;
+        z-index: 0;
+        left: -150px;
+        height: 400px;
+    }
+    
+    #footerRight {
+        position: absolute;
+        top: -96%;
+        right: 3%;
+        height: 134%;    
+    }    
+    
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: ghostwhite;
+    }
+    /* ----- SIDEBAR ----- */
+    .navbar {
+        position: relative;
+        height: 10%;
+        width: 100%;
+    }
+    
+    #homeLogo {
+        position: absolute;
+        height: 44px;
+        top: 10px;
+        left:calc(50% - 22px);
+    }
+    
+    #hamburger {
+        position: absolute;
+        color: white;
+        top: 20px;
+        left: 20px;
+        height: 20px;
+    }
+    
+    #crossBtn {
+        position: absolute;
+        height: 36px;
+        color: white;
+        top: 10px;
+        left: 10px;
+    }
+    
+    #open-btn {
+        position: absolute;
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    #close-btn {
+        position: absolute;
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+        top: 8px;
+        left: 8px;
+    }
+    
+    .sidebar {
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 0px;
+        height: 100vh;
+        background: #19203E;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    
+    .sidebar ul {
+        position: absolute;
+        height: 400px;
+        width: 160px;
+        top: calc(50% - 120px);
+        left: calc(50% - 80px);
+    }
+    .sidebar ul li {
+        font-family: 'noteworthy';
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bold;
+        line-height: 45px;
+        list-style-type: none;
+    }
+    
+    .sidebar ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    .sidebar ul li a:hover {
+        color: #B5FBCD;
+    }
+    #sidebarSignature {
+        position: absolute;
+        height: 40px;
+        width: 80px;
+        right: 0px;
+        top: 10px;
+    }
+    #sidebarLogo {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        right: calc(50% - 60px);
+        bottom: 0px;
+    }
+
+    .home {
+        position: relative;
+        height: 80%;
+        width: 100%;
+    }
+    
+    .triangleRight {
+        display: none;
+    }    
+    
+    #homeProfilPic {
+        position: absolute;
+        top: 45px;
+        left: 110px;
+        height: 230px;
+    }
+    
+    #homeTitle {
+        z-index: 2;
+        position: absolute;
+        top: 30%;
+        right: 16%;
+        height: 100px;
+    }
+
+    .footer {
+        position: relative;
+        height: 10%;
+        width: 100%;
+        bottom: 0;
+    }
+    
+    .footerLeft {
+        position: absolute;
+        top: -115px;
+        z-index: 0;
+        left: -162px;
+        height: 336px;
+    }
+    
+    #footerRight {
+        position: absolute;
+        top: -100px;
+        right: 20px;
+        height: 100px;
+    }    
+}

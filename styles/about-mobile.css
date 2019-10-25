@@ -1,0 +1,209 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+    .triangleRight {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .aboutLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        box-shadow: inset 0 0 1px #707070, 0 0 1px #707070;
+        height: 96%;
+        width: 80%;
+        padding: 6px;
+        border-radius: 10px;
+        background: rgb(248, 248, 248, 0.9);
+        overflow: scroll;
+    }
+    
+    .aboutRight {
+        display: none;
+    }
+    
+    .aboutText {
+        font-family: 'noteworthy';
+        color: #19203E;
+        font-size: 1rem;
+        font-weight: 300;
+        text-indent: 10px;
+    }
+    
+    .aboutLeft ul li {
+        padding: 4px 0;
+        font-family: 'noteworthy';
+        color: #19203E;
+        list-style-type: none;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    .logo-container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 40px;
+    }
+    #wagon {
+        height: 40px;
+        width: 40px;
+    }
+    #infrep {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .ringLeft {
+        border: 1px solid white;
+        -webkit-border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 25%;
+        top: 10px;
+        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.0
+    }
+    .ringRight {
+        border: 1px solid #FD1015;
+        -webkit-border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 25%;
+        top: 10px;
+        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.0
+    }
+    @-webkit-keyframes pulsate {
+        0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+        50% {opacity: 1.0;}
+        100% {-webkit-transform: scale(1.6, 1.6); opacity: 0.0;}
+    }
+    
+    .sentences {
+        display: none;
+    }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    .triangleRight {
+        display: none;
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .aboutLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        z-index: 2;
+        box-shadow: inset 0 0 1px #707070, 0 0 1px #707070;
+        height: 80%;
+        width: 80%;
+        padding: 6px;
+        border-radius: 10px;
+        background: rgb(248, 248, 248, 0.9);
+        overflow: scroll;
+    }
+    
+    .aboutRight {
+        display: none;
+    }
+    
+    .aboutText {
+        font-family: 'noteworthy';
+        color: #19203E;
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-indent: 10px;
+    }
+    
+    .aboutLeft ul li {
+        padding: 4px 0;
+        font-family: 'noteworthy';
+        color: #19203E;
+        list-style-type: none;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+    
+    .logo-container {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 40px;
+    }
+    #wagon {
+        height: 40px;
+        width: 40px;
+    }
+    #infrep {
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+    }
+    
+    .ringLeft {
+        border: 1px solid white;
+        -webkit-border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        left: 25%;
+        top: 10px;
+        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.0
+    }
+    .ringRight {
+        border: 1px solid #FD1015;
+        -webkit-border-radius: 30px;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        right: 25%;
+        top: 10px;
+        -webkit-animation: pulsate 3s ease-out;
+        -webkit-animation-iteration-count: infinite;
+        opacity: 0.0
+    }
+    @-webkit-keyframes pulsate {
+        0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+        50% {opacity: 1.0;}
+        100% {-webkit-transform: scale(1.6, 1.6); opacity: 0.0;}
+    }
+    
+    .sentences {
+        display: none;
+    }
+}

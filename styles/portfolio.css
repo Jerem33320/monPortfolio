@@ -1,0 +1,395 @@
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+    .banner2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 80%;
+        width: 100%;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #2c3e50;
+        background-image: none;
+    }
+    /* Remove IE arrow */
+    select::-ms-expand {
+        display: none;
+    }
+
+    .custom-select {
+        position: relative;
+        top: -30px;
+        display: flex;
+        width: 20em;
+        height: 3em;
+        line-height: 3;
+        background: #2c3e50;
+        overflow: hidden;
+        border-radius: .25em;
+    }
+    select {
+        flex: 1;
+        padding: 0 .5em;
+        cursor: pointer;
+        font-family: "noteworthy";
+        color: rgb(219, 220, 224);
+        font-weight: bold;
+        padding-left: 20px;
+        font-size: 18px;
+    }
+    /* Arrow */
+    .custom-select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 1em;
+        background: #08BDE1 ;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }
+
+    .custom-select:hover::after {
+        color: #B5FBCD;
+    }
+
+    .language-style {
+        position: absolute;
+        top: 16%;
+        width: 80%;
+        height: 300px;
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .cardsLanguage {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card {
+        z-index: 1;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        animation: rotation 3s linear infinite;
+        width: 26%;
+    }
+
+    .card:hover {
+        transform: scale(1.06);
+        transition: 1.3s;
+    }
+
+    .card a {
+        text-decoration: none;
+    }
+
+    .card-top {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    #card-top-hotel {
+        background-image: url("../img/imgPortfolio/hotel.png");
+    }
+    #card-top-instafrep {
+        background-image: url("../img/imgPortfolio/instafrep.png");
+    }
+    #card-top-shareYourPassions {
+        background-image: url("../img/imgPortfolio/shareYourPassions.png");
+    }
+    #card-top-supairoz {
+        background-image: url("../img/imgPortfolio/supairoz.png");
+    }
+    #card-top-meMakers {
+        background-image: url("../img/imgPortfolio/me-makers.png");
+    }
+    #card-top-chatroom {
+        background-image: url("../img/imgPortfolio/chatroom.png");
+    }
+    #card-top-harryPotter {
+        background-image: url("../img/imgPortfolio/hp-game.png");
+    }
+    #card-top-drumkit {
+        background-image: url("../img/imgPortfolio/drumkit.png");
+    }
+    #card-top-simon {
+        background-image: url("../img/imgPortfolio/simon.png");
+    }
+
+    .card-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(234, 236, 242, 0.4);
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 90px;
+        height: 90px;
+        overflow: hidden;
+    }
+
+    .card-bottom {
+        font-family: "noteworthy";
+        background: rgb(248, 248, 248, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 170px;
+        border-radius: 0 0 16px 16px;
+        overflow: scroll;
+    }
+
+    .card-bottom p{
+        color: #19203E;;
+        margin: 30px 0 0;
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    .cardFooter {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        height: 30px;
+        width: 30px;
+    }
+    .githubCard {
+        font-size: 20px;
+        height: 20px;
+        width: 20px;
+        color: #171a1c;
+    }
+
+    .onWeb {
+        font-size: 16px;
+        font-weight: bold;
+        height: 20px;
+        width: 20px;
+        color: #08BDE1;
+    }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    .banner2 {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        height: 80%;
+        width: 100%;
+    }
+
+    select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        outline: 0;
+        box-shadow: none;
+        border: 0 !important;
+        background: #2c3e50;
+        background-image: none;
+    }
+    /* Remove IE arrow */
+    select::-ms-expand {
+        display: none;
+    }
+
+    .custom-select {
+        position: relative;
+        top: -30px;
+        display: flex;
+        width: 28em;
+        height: 5em;
+        line-height: 3;
+        background: #2c3e50;
+        overflow: hidden;
+        border-radius: .25em;
+    }
+    select {
+        flex: 1;
+        padding: 0 .5em;
+        cursor: pointer;
+        font-family: "noteworthy";
+        color: rgb(219, 220, 224);
+        font-weight: bold;
+        padding-left: 20px;
+        font-size: 1.6rem;
+    }
+    /* Arrow */
+    .custom-select::after {
+        content: '\25BC';
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 1em 1em;
+        background: #08BDE1 ;
+        cursor: pointer;
+        pointer-events: none;
+        -webkit-transition: .25s all ease;
+        -o-transition: .25s all ease;
+        transition: .25s all ease;
+    }
+    .custom-select:hover::after {
+        color: #B5FBCD;
+    }
+
+    .language-style {
+        position: absolute;
+        top: 16%;
+        width: 80%;
+        height: 300px;
+        display: none;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .cardsLanguage {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .card {
+        z-index: 1;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        animation: rotation 3s linear infinite;
+        width: 30%;
+    }
+
+    .card:hover {
+        transform: scale(1.06);
+        transition: 1.3s;
+    }
+
+    .card a {
+        text-decoration: none;
+    }
+
+    .card-top {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    #card-top-hotel {
+        background-image: url("../img/imgPortfolio/hotel.png");
+    }
+    #card-top-instafrep {
+        background-image: url("../img/imgPortfolio/instafrep.png");
+    }
+    #card-top-shareYourPassions {
+        background-image: url("../img/imgPortfolio/shareYourPassions.png");
+    }
+    #card-top-supairoz {
+        background-image: url("../img/imgPortfolio/supairoz.png");
+    }
+    #card-top-meMakers {
+        background-image: url("../img/imgPortfolio/me-makers.png");
+    }
+    #card-top-chatroom {
+        background-image: url("../img/imgPortfolio/chatroom.png");
+    }
+    #card-top-harryPotter {
+        background-image: url("../img/imgPortfolio/hp-game.png");
+    }
+    #card-top-drumkit {
+        background-image: url("../img/imgPortfolio/drumkit.png");
+    }
+    #card-top-simon {
+        background-image: url("../img/imgPortfolio/simon.png");
+    }
+
+    .card-middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: rgb(234, 236, 242, 0.4);
+        position: absolute;
+        left: 50%;
+        top: 48%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+    }
+
+    .card-bottom {
+        font-family: "noteworthy";
+        background: rgb(248, 248, 248, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        border-radius: 0 0 16px 16px;
+        overflow: scroll;
+    }
+
+    .card-bottom p{
+        color: #19203E;;
+        margin: 30px 0 0;
+        font-size: 1.8rem;
+        padding: 20px;
+    }
+
+    .cardFooter {
+        position: absolute;
+        bottom: 6%;
+        right: 6%;
+        height: 30px;
+        width: 30px;
+        font-size: 2em;
+    }
+    
+    .githubCard {
+        height: 20px;
+        width: auto;
+        color: #171a1c;
+    }
+
+    .onWeb {
+        font-size: 1.8rem;
+        font-weight: bold;
+        height: 20px;
+        width: 20px;
+        color: #08BDE1;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Jérémy Peyrat Site" content="Fullstack Web Developer">
+  <title>Jérémy Peyrat/Home</title>
+  <link rel="icon" type="image/png" href="img/monLogo.png" sizes="16x16" />
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles/home.css">
+  <link rel="stylesheet" type="text/css" href="styles/home-mobile.css">
+  <link rel="stylesheet" type="text/css" href="styles/home-tablet.css">
+  <link rel="stylesheet" type="text/css" href="styles/mentions.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+  <div class="intro">
+    <img id="introLogo" src="img/monLogo.png" alt="Logo">
+  </div>
+
+    <div class="container">
+      <nav class="navbar">
+        <img id="hamburger" src="img/finalBurger.png" alt="Ouvrir le Menu">
+        <button id="open-btn" onclick="openNav()"></button>
+
+        <img id="homeLogo" src="img/monLogo.png" alt="Logo">
+        
+        <nav class="sidebar">
+          <img id="crossBtn" src="img/crossBtn.png" alt="Fermer le Menu">
+          <button id="close-btn" onclick="closeNav()"></button>
+          <img id="sidebarSignature" src="img/signature.png" alt="Signature">
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="about/about.html">À Propos</a></li>
+              <li><a href="portfolio/portfolio.html">Portfolio</a></li>
+              <li><a href="contact/contact.html">Me Joindre</a></li>
+          </ul>
+          <img id="sidebarLogo" src="img/monLogo.png" alt="Logo">
+        </nav>
+      </nav>
+    
+      <section class="home">
+        <img id="homeProfilPic" src="img/homeDesign.png" alt="Ma photo de profil avec des triangles">
+        <img id="homeTitle" src="img/homeTitle.png" alt="Jérémy Peyrat/Développeur Web Fullstack">
+      </section>
+      
+      <footer class="footer">
+          <img class="triangleRight" src="img/triangleRight.png" alt="Deco droite triangle">
+          <img class="footerLeft" src="img/footerLeft.png" alt="Logo bas de page gauche">
+          <img id="footerRight" src="img/footerRight.png" alt="Présentation compétence bas de page droite">
+          <h3>©2019 Jérémy Peyrat | <a href="mentions.html">Mentions Légales</a> | Fullstack Web Developer</h3>
+      </footer>
+    </div> 
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/intro.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

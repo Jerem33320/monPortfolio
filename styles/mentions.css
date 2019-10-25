@@ -1,0 +1,52 @@
+.mentions {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    overflow: scroll;
+}
+
+.mentions header {
+    color: #19203E;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    text-align: center;
+}
+
+.subMentions {
+    color: #08BDE1;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.mentionParagraf {
+    color: #707070;
+    font-size: 0.8rem;
+    font-weight: bold;
+    font-family: Helvetica Neue, Arial, sans-serif;
+    text-align: left;
+    padding: 0 10%;
+    list-style-type: none;
+}
+
+footer h3 {
+    position: absolute;
+    bottom: 10px;
+    color: rgb(68, 75, 112);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: rgb(68, 75, 112);
+}
+footer h3 a:hover {
+    color: #08BDE1 ;
+}
