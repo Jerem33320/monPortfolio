@@ -3,8 +3,8 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
+@media (min-width: 816px) and (max-width: 1024px) {
+
     .container {
         display: flex;
         flex-direction: column;
@@ -19,14 +19,14 @@
         height: 10%;
         width: 100%;
     }
-    
+
     #homeLogo {
         position: absolute;
         height: 80px;
         top: 10px;
         left: calc(50% - 40px);
     }
-    
+
     #hamburger {
         position: absolute;
         color: white;
@@ -34,7 +34,7 @@
         left: 20px;
         height: 34px;
     }
-    
+
     #crossBtn {
         position: absolute;
         height: 50px;
@@ -42,7 +42,7 @@
         top: 20px;
         left: 20px;
     }
-    
+
     #open-btn {
         position: absolute;
         opacity: 0;
@@ -51,7 +51,7 @@
         top: 10px;
         left: 10px;
     }
-    
+
     #close-btn {
         position: absolute;
         opacity: 0;
@@ -60,7 +60,7 @@
         top: 8px;
         left: 8px;
     }
-    
+
     .sidebar {
         position: fixed;
         z-index: 3;
@@ -72,7 +72,7 @@
         overflow-x: hidden;
         transition: 0.5s;
     }
-    
+
     .sidebar ul {
         position: absolute;
         height: 400px;
@@ -80,6 +80,7 @@
         top: calc(50% - 240px);
         left: calc(50% - 80px);
     }
+
     .sidebar ul li {
         font-family: 'noteworthy';
         font-size: 2rem;
@@ -88,14 +89,16 @@
         line-height: 110px;
         list-style-type: none;
     }
-    
+
     .sidebar ul li a {
         color: white;
         text-decoration: none;
     }
+
     .sidebar ul li a:hover {
         color: #B5FBCD;
     }
+
     #sidebarSignature {
         position: absolute;
         height: 80px;
@@ -103,6 +106,7 @@
         right: 0px;
         top: 10px;
     }
+
     #sidebarLogo {
         position: absolute;
         height: 180px;
@@ -110,22 +114,23 @@
         right: calc(50% - 90px);
         bottom: 0px;
     }
+
     /* ----- HOMEPAGE ----- */
     .home {
         position: relative;
         height: 80%;
         width: 100%;
     }
-    
+
     .triangleRight {
         position: absolute;
-        z-index: 0;
+        z-index: -1;
         top: -948px;
         right: -390px;
         height: 1104px;
         width: 780px;
     }
-    
+
     #homeProfilPic {
         position: absolute;
         z-index: 2;
@@ -133,7 +138,7 @@
         left: calc(50% - 26%);
         height: 50%;
     }
-    
+
     #homeTitle {
         position: absolute;
         z-index: 2;
@@ -148,7 +153,7 @@
         width: 100%;
         bottom: 0;
     }
-    
+
     .footerLeft {
         position: absolute;
         top: -238px;
@@ -157,13 +162,13 @@
         height: 600px;
         width: 600px;
     }
-    
+
     #footerRight {
         position: absolute;
         top: -90%;
         right: 3%;
         height: 134%;
-    }  
+    }
 }
 
 /* 
@@ -171,8 +176,8 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
+@media (min-width: 816px) and (max-width: 1024px) and (orientation: landscape) {
+
     .container {
         display: flex;
         flex-direction: column;
@@ -181,20 +186,20 @@
         overflow: hidden;
         background-color: ghostwhite;
     }
-    
+
     .navbar {
         position: relative;
         height: 10%;
         width: 100%;
     }
-    
+
     #homeLogo {
         position: absolute;
         height: 74px;
         top: 10px;
         left: calc(50% - 37px);
     }
-    
+
     #hamburger {
         position: absolute;
         color: white;
@@ -202,7 +207,7 @@
         left: 20px;
         height: 34px;
     }
-    
+
     #crossBtn {
         position: absolute;
         height: 36px;
@@ -210,7 +215,7 @@
         top: 10px;
         left: 10px;
     }
-    
+
     #open-btn {
         position: absolute;
         opacity: 0;
@@ -219,13 +224,13 @@
         top: 10px;
         left: 10px;
     }
-    
+
     #open-btn:hover {
         border: 1px solid #19203E;
         opacity: 0.2;
         border-radius: 30%;
     }
-    
+
     #close-btn {
         position: absolute;
         opacity: 0;
@@ -234,13 +239,13 @@
         top: 8px;
         left: 8px;
     }
-    
+
     #close-btn:hover {
         border: 1px solid #19203E;
         opacity: 0.2;
         border-radius: 30%;
     }
-    
+
     .sidebar {
         position: fixed;
         z-index: 3;
@@ -252,7 +257,7 @@
         overflow-x: hidden;
         transition: 0.5s;
     }
-    
+
     .sidebar ul {
         position: absolute;
         height: 400px;
@@ -260,6 +265,7 @@
         top: calc(50% - 120px);
         left: calc(50% - 80px);
     }
+
     .sidebar ul li {
         font-family: 'noteworthy';
         font-size: 1.6rem;
@@ -268,14 +274,16 @@
         line-height: 68px;
         list-style-type: none;
     }
-    
+
     .sidebar ul li a {
         color: white;
         text-decoration: none;
     }
+
     .sidebar ul li a:hover {
         color: #B5FBCD;
     }
+
     #sidebarSignature {
         position: absolute;
         height: 60px;
@@ -283,6 +291,7 @@
         right: 0px;
         top: 10px;
     }
+
     #sidebarLogo {
         position: absolute;
         height: 170px;
@@ -296,7 +305,7 @@
         height: 80%;
         width: 100%;
     }
-    
+
     .triangleRight {
         position: absolute;
         z-index: 0;
@@ -304,15 +313,15 @@
         right: calc(50% - 894px);
         height: 900px;
         width: 780px;
-    }    
-    
+    }
+
     #homeProfilPic {
         position: absolute;
         top: 16%;
         left: 14%;
         height: 70%;
     }
-    
+
     #homeTitle {
         z-index: 2;
         top: 32%;
@@ -326,7 +335,7 @@
         width: 100%;
         bottom: 0;
     }
-    
+
     .footerLeft {
         position: absolute;
         top: -230px;
@@ -335,11 +344,11 @@
         height: 500px;
         width: 500px;
     }
-    
+
     #footerRight {
         position: absolute;
         top: -130px;
         right: 48px;
         height: 140px;
-    }     
+    }
 }

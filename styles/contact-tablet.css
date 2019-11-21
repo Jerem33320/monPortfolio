@@ -3,7 +3,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 816px) and (max-width: 1024px) {
   
     .homePage {
         flex-direction: column;
@@ -93,7 +93,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 816px) and (max-width: 1024px) and (orientation: landscape) {
   
     #map {
         z-index: 2;

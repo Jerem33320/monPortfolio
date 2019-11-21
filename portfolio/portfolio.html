@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,27 +19,28 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
-    
+
     <div class="container">
-    
+
         <nav class="navbar">
             <img id="hamburger" src="../img/finalBurger.png" alt="Ouvrir le Menu">
             <button id="open-btn" onclick="openNav()"></button>
-    
+
             <img id="homeLogo" src="../img/monLogo.png" alt="Logo">
-            
+
             <nav class="sidebar">
-            <img id="crossBtn" src="../img/crossBtn.png" alt="Fermer le Menu">
-            <button id="close-btn" onclick="closeNav()"></button>
-            <img id="sidebarSignature" src="../img/signature.png" alt="Signature">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about/about.html">À Propos</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="../contact/contact.html">Me Joindre</a></li>
-            </ul>
-            <img id="sidebarLogo" src="../img/monLogo.png" alt="Logo">
+                <img id="crossBtn" src="../img/crossBtn.png" alt="Fermer le Menu">
+                <button id="close-btn" onclick="closeNav()"></button>
+                <img id="sidebarSignature" src="../img/signature.png" alt="Signature">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../about/about.html">À Propos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="../contact/contact.html">Me Joindre</a></li>
+                </ul>
+                <img id="sidebarLogo" src="../img/monLogo.png" alt="Logo">
             </nav>
         </nav>
 
@@ -47,13 +49,13 @@
             <h1 id="pageTitle">Portfolio</h1>
             <hr class="rightLine">
         </section>
+        <h3 style="width: 100%; text-align: center;">(Voir les applications réalisées:)</h3>
 
         <section class="homePage">
             <div class="banner2">
                 <div class="custom-select" data-aos="zoom-out-up" data-aos-duration="1000">
                     <select id="languageCode" name="languageCode">
-                        <option value="0" selected="selected">Voir les Applications réalisées :</option>
-                        <option value="1">En Php/Symfony</option>
+                        <option value="0" selected="selected">En Php/Symfony</option>
                         <option value="2">En Ruby on Rails</option>
                         <option value="3">En Javascript</option>
                     </select>
@@ -153,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-        
+
 
                 <div id="thirdLanguage" class="language-style">
                     <div class="cardsLanguage">
@@ -206,7 +208,7 @@
 
         <footer class="footer">
             <img class="triangleRight rectify-top-triangle" src="../img/imgPortfolio/triangleRightPortfolio.png"
-            alt="Deco droite triangle">
+                alt="Deco droite triangle">
             <img class="footerLeft" src="../img/imgPortfolio/footLeftPortfolio.png" alt="Logo bas de page gauche">
             <h3>©2019 Jérémy Peyrat | <a href="../mentions.html">Mentions Légales</a> | Fullstack Web Developer</h3>
         </footer>
@@ -220,11 +222,12 @@
         let card = document.querySelector('.card');
         const r = 8;
 
-        let angle = 0, x, y;
+        let angle = 0,
+            x, y;
 
         function loop() {
-            angle+= 0.05;
-            if(angle === 360) {
+            angle += 0.05;
+            if (angle === 360) {
                 angle = 0;
             }
 
@@ -233,21 +236,27 @@
 
             card.style.transform = `rotateX(${x}deg) rotateY(${y}deg)`;
 
-            requestAnimationFrame(loop);  
+            requestAnimationFrame(loop);
         }
 
         // loop();
+        $('#firstLanguage').slideDown();
 
-        $("#languageCode").change(function()
-        {
+        $("#languageCode").change(function () {
             $('.language-style').slideUp();
-            switch($('#languageCode :selected').val())
-            {
-                case '1': $('#firstLanguage').slideDown(); break;
-                case '2': $('#secondLanguage').slideDown(); break;
-                case '3': $('#thirdLanguage').slideDown(); break;
+            switch ($('#languageCode :selected').val()) {
+                case '0':
+                    $('#firstLanguage').slideDown();
+                    break;
+                case '2':
+                    $('#secondLanguage').slideDown();
+                    break;
+                case '3':
+                    $('#thirdLanguage').slideDown();
+                    break;
             }
-        });        
+        });
     </script>
 </body>
+
 </html>

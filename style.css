@@ -12,10 +12,10 @@
 /* gris: #707070 rgb(112, 112, 112)*/
 /* gris bleu: #5A5D7B */
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,6 +27,7 @@ body {
 .rectify-top-triangle {
     margin-bottom: -70px;
 }
+
 .homePage {
     display: flex;
     justify-content: space-around;
@@ -44,6 +45,7 @@ body {
     width: 100%;
     height: 100px;
 }
+
 #pageTitle {
     color: #19203E;
     font-size: 40px;
@@ -67,6 +69,22 @@ body {
     background-color: #19203E;
 }
 
+footer h3 {
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    color: rgb(68, 75, 112);
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer h3 a {
+    text-decoration: none;
+    color: rgb(68, 75, 112);
+}
+
 /* 
   ##Device = Most of the Smartphones Mobiles (Portrait)
   ##Screen = B/w 320px to 479px
@@ -81,12 +99,14 @@ body {
         margin-left: 20px;
         background-color: #19203E;
     }
+
     #pageTitle {
         color: #19203E;
         font-size: 2rem;
         font-weight: bold;
         font-family: Helvetica Neue, Arial, sans-serif;
     }
+
     .rightLine {
         color: #19203E;
         height: 2px;
@@ -97,14 +117,13 @@ body {
 
     footer h3 {
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         color: rgb(68, 75, 112);
         width: 100%;
         height: 30px;
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
-
 }
 
 /* 
@@ -112,8 +131,8 @@ body {
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
-  
+@media (min-width: 481px) and (max-width: 815px) {
+
     .leftLine {
         color: #19203E;
         height: 2px;
@@ -121,12 +140,14 @@ body {
         margin-left: 20px;
         background-color: #19203E;
     }
+
     #pageTitle {
         color: #19203E;
         font-size: 1.4rem;
         font-weight: bold;
         font-family: Helvetica Neue, Arial, sans-serif;
     }
+
     .rightLine {
         color: #19203E;
         height: 2px;
@@ -144,7 +165,7 @@ body {
         text-align: center;
         font-size: 1rem;
     }
-    
+
 }
 
 /* 
@@ -152,8 +173,8 @@ body {
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  
+@media (min-width: 816px) and (max-width: 1024px) {
+
     .leftLine {
         color: #19203E;
         height: 5px;
@@ -161,12 +182,14 @@ body {
         margin-left: 20%;
         background-color: #19203E;
     }
+
     #pageTitle {
         color: #19203E;
         font-size: 2rem;
         font-weight: bold;
         font-family: Helvetica Neue, Arial, sans-serif;
     }
+
     .rightLine {
         color: #19203E;
         height: 5px;
@@ -184,7 +207,7 @@ body {
         text-align: center;
         font-size: 1.4rem;
     }
-    
+
 }
 
 /* 
@@ -192,7 +215,7 @@ body {
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {
+@media (min-width: 1401px) {
 
     .leftLine {
         color: #19203E;
@@ -201,12 +224,14 @@ body {
         margin-left: 20%;
         background-color: #19203E;
     }
+
     #pageTitle {
         color: #19203E;
         font-size: 2.8rem;
         font-weight: bold;
         font-family: Helvetica Neue, Arial, sans-serif;
     }
+
     .rightLine {
         color: #19203E;
         height: 4px;

@@ -3,7 +3,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 816px) and (max-width: 1024px) {
   
     .banner2 {
         position: relative;
@@ -287,7 +287,7 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 816px) and (max-width: 1024px) and (orientation: landscape) {
   
     .banner2 {
         position: relative;

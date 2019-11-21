@@ -157,8 +157,7 @@
         top: -96%;
         right: 3%;
         height: 134%;    
-    }    
-    
+    }   
 }
 
 /* 
@@ -166,7 +165,7 @@
   ##Screen = B/w 481px to 767px
 */
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 815px) {
   
     .container {
         display: flex;
